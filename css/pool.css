@@ -1058,12 +1058,6 @@
                             .highlight.yaml .line .attr{
                                 color:#e24f5a
                             }
-                            @font-face{
-                                font-family:MyFont;src:url(https://cdn.jsdelivr.net/gh/zhangshiha0/CDN@6.1/font/candy.ttf)
-                            }
-                            #article-container code,#article-container pre{
-                                font-family:MyFont!important
-                            }
                             @keyframes elastic{
                                 0%{
                                     transform:scale(0)
