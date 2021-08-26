@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       const $nav = document.getElementById('nav')
       let t
-      if (window.innerWidth < 768) t = true
-     else t = blogNameWidth + menusWidth + searchWidth + darkmodeBtWidth > $nav.offsetWidth - 130
+      if (window.innerWidth < 900) t = true
+     else t = blogNameWidth + menusWidth + searchWidth + darkmodeBtWidth > $nav.offsetWidth - 120
 
     if (t) {
       $nav.classList.add('hide-menu')

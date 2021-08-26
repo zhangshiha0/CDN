@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', function () {
         activateDarkMode()
         saveToLocal.set('theme', 'dark', 2)
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
-        document.getElementById('darkmode-switch')
+        document.getElementById('darkmode-switch').innerHTML = ' 开灯'
       } else {
         activateLightMode()
         saveToLocal.set('theme', 'light', 2)
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
-        document.getElementById('darkmode-switch')
+        document.getElementById('darkmode-switch').innerHTML = ' 关灯'
       }
       // handle some cases
       typeof utterancesTheme === 'function' && utterancesTheme()
@@ -64,4 +64,5 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('darkmodeBt').addEventListener('click', function (){
     navFn.switchDarkMode()
   })
+
 })
