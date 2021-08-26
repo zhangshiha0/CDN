@@ -1,22 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-  let blogNameWidth = document.getElementById('site-name').offsetWidth
-  const $menusEle = document.querySelector('#menus .menus_items')
-  let menusWidth = $menusEle && $menusEle.offsetWidth
-  const $searchEle = document.querySelector('#search-button')
-  let searchWidth = $searchEle && $searchEle.offsetWidth
-  let detectFontSizeChange = false
+    const $blogName = document.getElementById('site-name')
+    let blogNameWidth = $blogName && $blogName.offsetWidth
+    const $menusEle = document.querySelector('#menus .menus_items')
+    let menusWidth = $menusEle && $menusEle.offsetWidth
+    const $searchEle = document.querySelector('#search-button')
+    let searchWidth = $searchEle && $searchEle.offsetWidth
+    $darkmodeBtEle = document.querySelector('#darkmodeBt')
+    let darkmodeBtWidth = $darkmodeBtEle && $darkmodeBtEle.offsetWidth
 
-  const adjustMenu = () => {
-    if (detectFontSizeChange) {
-      blogNameWidth = document.getElementById('site-name').offsetWidth
-      menusWidth = $menusEle && $menusEle.offsetWidth
-      searchWidth = $searchEle && $searchEle.offsetWidth
-      detectFontSizeChange = false
-    }
-    const $nav = document.getElementById('nav')
-    let t
-    if (window.innerWidth < 768) t = true
-    else t = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
+    const adjustMenu = (change = false) => {
+      if (change) {
+        blogNameWidth = $blogName && $blogName.offsetWidth
+        menusWidth = $menusEle && $menusEle.offsetWidth
+        searchWidth = $searchEle && $searchEle.offsetWidth
+      }
+      const $nav = document.getElementById('nav')
+      let t
+      if (window.innerWidth < 768) t = true
+     else t = blogNameWidth + menusWidth + searchWidth + darkmodeBtWidth > $nav.offsetWidth - 130
 
     if (t) {
       $nav.classList.add('hide-menu')
