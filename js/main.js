@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       const $nav = document.getElementById('nav')
       let t
-      if (window.innerWidth < 900) t = true
+      if (window.innerWidth < 1000) t = true
      else t = blogNameWidth + menusWidth + searchWidth + darkmodeBtWidth > $nav.offsetWidth - 120
 
     if (t) {
