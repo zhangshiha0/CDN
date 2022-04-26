@@ -13,7 +13,7 @@ $("html").click(function() {
             // 个人信息编写区域ON
 
             // 头像链接地址
-            headimg = "https://cdn.jsdelivr.net/gh/zhangshiha0/CDN@6.1.2/image/head.jpg",
+            headimg = "https://cdn.jsdelivr.net/gh/zhangshiha0/picx@master/photos/head1.6xfcc2x2pvk0.jpg",
             // 博主铭言句子
             motto = "你与春风皆过客",
             // 配置 - 导航内容及链接【注：名称和链接需要一一对应，用英文逗号隔开】
