@@ -25,7 +25,7 @@ $("html").click(function() {
 
         // 程序化代码
         code += '<h3>' + title + '</h3>';
-        code += '<div >< img src = "' + headimg + '" width=45px height=45px alt = "[ ' + title + ' ]" / >< /div>';
+        code += '<div >< img src = "' + headimg + '"></div>';
         code += '<p>' + motto + '</p >';
         code += '< ul >';
         for (vo in linkname) {
