@@ -5,7 +5,7 @@ $("html").click(function () {
     if (x) {
         // 头部添加
         var title = document.title;
-        var headerh = '<h3>' + title + '</h3><div><img src="https://file.xhto.cn/xpretty/images/himg.jpg" alt="[ ' + title + ' ]"/></div><p>你与春风皆过客</p><ul><li><a href="/">首页</a></li><li><a href="https://blog.shihaoa.top/">博客</a></li></ul>';
+        var headerh = '<h3>' + title + '</h3><div><img src="https://cdn.jsdelivr.net/gh/zhangshiha0/CDN@6.1.7.4/image/head1.jpg" alt="[ ' + title + ' ]"/></div><p>你与春风皆过客</p><ul><li><a href="/">首页</a></li><li><a href="https://blog.shihaoa.top/">博客</a></li></ul>';
         $(".header").append(headerh);
     }
 })
