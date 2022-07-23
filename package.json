@@ -1,0 +1,22 @@
+{
+  "name": "forestwa-status",
+  "version": "1.0.0",
+  "description": "大白杂货铺静态资源",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangshiha0/CDN.git"
+  },
+  "keywords": [
+    "图床"
+  ],
+  "author": "forestwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangshiha0/CDN/issues"
+  },
+  "homepage": "https://github.com/zhangshiha0/CDN#readme"
+}
